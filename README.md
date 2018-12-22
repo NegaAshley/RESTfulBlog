@@ -33,3 +33,9 @@ Blog
 * Add header and footer partials
 * Include semantic UI
 * Add simple nav
+
+# Putting the C in CRUD
+* Add NEW route
+* Add new template
+* Add CREATE route
+* Add CREATE template
