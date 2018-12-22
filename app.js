@@ -38,6 +38,24 @@ app.get("/blogs", function(req, res){
     });
 });
 
+//Create blogs route
+app.post("/blogs", function(req, res){
+    var newBlogTitle = req.body.blog.title;
+    var newBlogImage = req.body.blog.image;
+    var newBlogBody = req.body.blog.body;
+    var newBlog = {title: newBlogTitle, image: newBlogImage, body: newBlogBody};
+    Blog.create(newBlog, function(err, blog){
+       if(err){
+           console.log("Error creating blog post.");
+           console.log(err);
+       }else{
+           console.log("Blog post saved to database.");
+           console.log(blog);
+           res.redirect("/blogs");
+       } 
+    });
+});
+
 //New blog route
 app.get("/blogs/new", function(req, res){
     res.render("newBlog");
