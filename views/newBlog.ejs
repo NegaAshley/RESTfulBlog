@@ -1,3 +1,17 @@
 <% include partials/header %>
-<h1>New Blog Page</h1>
+<h1>Create a New Blog</h1>
+<form action="/blogs" method="POST">
+    <div class="form-group">
+        <input class="form-control" type="text" name="blog[title]" placeholder="Blog Title">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="blog[image]" placeholder="Image URL">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" name="blog[body]" placeholder="Blog Body"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="submit">
+    </div>
+</form>
 <% include partials/footer %>
