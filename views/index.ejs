@@ -1,18 +1,18 @@
 <% include partials/header %>
     <div class="ui main text container segment">
         <h1>Welcome to the Blog!</h1>
-    </div>
-    <div>
-        <% blogs.forEach(function(blog){ %>
-            <div class="thumbnail">
-                <h2><%= blog.title %></h2>
-                <img src="<%= blog.image %>">
-                <span><%= blog.created %></span>
-                <p><%= blog.body %></p>
-                <button onclick="window.location.href = '/blogs/<%= blog._id %>';">
-                    View Post
-                </button>
-            </div>
-        <% }); %>
+        <div>
+            <% blogs.forEach(function(blog){ %>
+                <div class="thumbnail">
+                    <h2><%= blog.title %></h2>
+                    <img src="<%= blog.image %>">
+                    <span><%= blog.created %></span>
+                    <p><%= blog.body %></p>
+                    <button onclick="window.location.href = '/blogs/<%= blog._id %>';">
+                        View Post
+                    </button>
+                </div>
+            <% }); %>
+        </div>
     </div>
 <% include partials/footer %>
