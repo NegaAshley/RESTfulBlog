@@ -36,6 +36,6 @@ Blog
 
 # Putting the C in CRUD
 * Add NEW route
-* Add new template
+* Add NEW template
 * Add CREATE route
 * Add CREATE template
