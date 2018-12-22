@@ -9,6 +9,9 @@
                 <img src="<%= blog.image %>">
                 <span><%= blog.created %></span>
                 <p><%= blog.body %></p>
+                <button onclick="window.location.href = '/blogs/<%= blog._id %>';">
+                    View Post
+                </button>
             </div>
         <% }); %>
     </div>
