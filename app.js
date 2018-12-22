@@ -21,13 +21,21 @@ var blogSchema = new mongoose.Schema({
 //Compile into model
 var Blog = mongoose.model("Blog", blogSchema);
 
+//Root route
 app.get("/", function(req, res){
     res.redirect("/blogs");
 });
 
 //Index route
 app.get("/blogs", function(req, res){
-   res.render("index"); 
+    Blog.find({}, function(err, allBlogs){
+        if(err){
+            console.log("Error getting blogs from database.")
+            console.log(err)
+        }else{
+            res.render("index", {blogs:allBlogs});
+        }
+    });
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
