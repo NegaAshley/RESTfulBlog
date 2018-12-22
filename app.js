@@ -38,6 +38,11 @@ app.get("/blogs", function(req, res){
     });
 });
 
+//New blog route
+app.get("/blogs/new", function(req, res){
+    res.render("newBlog");
+});
+
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Blog server has started!");
 });
