@@ -19,7 +19,17 @@ REST - a mapping between HTTP routes and CRUD
 
 Blog
 
-CREATE
-READ 
-UPDATE 
-DESTROY 
+* CREATE
+* READ 
+* UPDATE 
+* DESTROY
+
+# Blog Index
+* Set up the Blog app
+* Creat the Blog model
+* Add Index route and template
+
+# Basic Layout
+* Add header and footer partials
+* Include semantic UI
+* Add simple nav
