@@ -21,6 +21,10 @@ var blogSchema = new mongoose.Schema({
 //Compile into model
 var Blog = mongoose.model("Blog", blogSchema);
 
+app.get("/", function(req, res){
+    res.redirect("/blogs");
+});
+
 //Index route
 app.get("/blogs", function(req, res){
    res.render("index"); 
