@@ -1,0 +1,25 @@
+{
+  "name": "restfulblogapp",
+  "version": "1.0.0",
+  "description": "A blog created to learn about RESTful routing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NegaAshley/RESTfulBlog.git"
+  },
+  "author": "Ashley Xu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NegaAshley/RESTfulBlog/issues"
+  },
+  "homepage": "https://github.com/NegaAshley/RESTfulBlog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
+  }
+}
