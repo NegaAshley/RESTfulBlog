@@ -1,3 +1,7 @@
-i.icon {
+.icon {
     font-size: 2em;
+}
+
+.container.main {
+    margin-top: 3.0em;
 }
