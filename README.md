@@ -1,9 +1,6 @@
 # RESTfulBlog
 
-## Introduction
-* Define REST and explain why it matters
-
-# List all 7 RESTful routes
+# All 7 RESTful routes
 * Index     /blogs           GET    List all blogs
 * New       /blogs/new       GET    Show new blog form
 * Create    /blogs           POST   Create a new blog and redirect somewhere
