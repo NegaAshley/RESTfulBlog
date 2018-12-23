@@ -1,5 +1,6 @@
 # RESTfulBlog
 * The purpose of this project is to show an example of RESTful routing in practice.
+* See the deployed version of this project here: https://what-soup.herokuapp.com/
 
 # All 7 RESTful routes
 * Index     /blogs           GET    List all blogs
