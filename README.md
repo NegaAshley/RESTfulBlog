@@ -67,3 +67,5 @@
 * 7. Run "mongo" in separate command line in appropriate place to connect to MongoDB server
 * 8. Run "node app.js" in separate command line in RESTfulBlog folder to start blog server
 * 9. Preview app
+
+# Note: With the latest version, you will now have to create your own MongoDB.

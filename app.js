@@ -6,8 +6,6 @@ var express     = require("express"),
     expressSanitizer = require("express-sanitizer");
 
 console.log(process.env.DATABASEURL);
-//Production database
-//mongoose.connect("mongodb://NegaAshley:Meepo123@ds243054.mlab.com:43054/whatsoup");
 
 mongoose.connect(process.env.DATABASEURL);
 
