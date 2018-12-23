@@ -52,3 +52,8 @@ REST - a mapping between HTTP routes and CRUD
 # Destroy
 * Add Destory route
 * Add Edit and Destroy links
+
+# Updates
+* Sanitize blog body
+* Style Index
+* Update REST table
