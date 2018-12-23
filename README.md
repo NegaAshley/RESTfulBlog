@@ -1,4 +1,5 @@
 # RESTfulBlog
+* The purpose of this project is to show an example of RESTful routing in practice.
 
 # All 7 RESTful routes
 * Index     /blogs           GET    List all blogs
@@ -10,9 +11,7 @@
 * Destroy   /blogs/id        DELETE Delete a particular blog, then redirect somewhere
 
 
-* Show example of RESTful routing in practice
-
-REST - a mapping between HTTP routes and CRUD
+# REST - a mapping between HTTP routes and CRUD
 
 # CRUD
 * CREATE
@@ -56,4 +55,14 @@ REST - a mapping between HTTP routes and CRUD
 # Updates
 * Sanitize blog body
 * Style Index
-* Update REST table
+
+# How to Run
+* 1. Use "Clone with HTTPS" URL to clone RESTfulBlog project
+* 2. Ensure that Node.JS is installed by entering "node -v" into the command line
+* 3. If needed, install Node.JS/NPM (https://nodejs.org/en/download/)
+* 4. Run "npm install" in command line
+* 5. Download MongoDB Server (https://www.mongodb.com/download-center) (Good YouTube videos to help: https://www.youtube.com/watch?v=3TvDUiclcFk&list=PLvTjg4siRgU1XVKER93YtJ2tCTXHCTBlT&index=1 and https://www.youtube.com/watch?v=54iI586Iv_w&list=PLvTjg4siRgU1XVKER93YtJ2tCTXHCTBlT&index=2)
+* 6. Run "modgod" in separate command line in appropriate place to start server
+* 7. Run "mongo" in separate command line in appropriate place to connect to MongoDB server
+* 8. Run "node app.js" in separate command line in RESTfulBlog folder to start blog server
+* 9. Preview app
