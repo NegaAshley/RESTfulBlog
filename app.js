@@ -94,9 +94,23 @@ app.put("/blogs/:id", function(req, res){
     Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, updatedBlog){
         if(err){
             console.log("Error updating blog post.")
+            console.log(err);
             res.redirect("/blogs");
         }else{
             res.redirect("/blogs/" + req.params.id);
+        }
+    });
+});
+
+//Delete blog route
+app.delete("/blogs/:id", function(req, res){
+    Blog.findByIdAndRemove(req.params.id, function(err){
+        if(err){
+            console.log("Error deleting blog post.");
+            console.log(err);
+            res.redirect("/blogs" + req.params.id);
+        }else{
+            res.redirect("/blogs");
         }
     });
 });
