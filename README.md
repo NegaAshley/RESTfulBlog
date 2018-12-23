@@ -14,8 +14,7 @@
 
 REST - a mapping between HTTP routes and CRUD
 
-Blog
-
+# CRUD
 * CREATE
 * READ 
 * UPDATE 
@@ -49,3 +48,7 @@ Blog
 * Add Update route
 * Add Update form
 * Add Method-Override
+
+# Destroy
+* Add Destory route
+* Add Edit and Destroy links
