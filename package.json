@@ -12,6 +12,7 @@
     "url": "git+https://github.com/NegaAshley/RESTfulBlog.git"
   },
   "author": "Ashley Xu",
+  "url": "https://what-soup.herokuapp.com/",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NegaAshley/RESTfulBlog/issues"
