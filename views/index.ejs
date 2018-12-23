@@ -1,17 +1,33 @@
 <% include partials/header %>
-    <div class="ui main text container segment">
-        <h1>Welcome to the Blog!</h1>
-        <div>
-            <% blogs.forEach(function(blog){ %>
-                <div class="thumbnail">
-                    <h2><%= blog.title %></h2>
-                    <img src="<%= blog.image %>">
-                    <span><%= blog.created.toDateString() %></span>
-                    <p><%- blog.body.substring(0, 100) %>...</p>
-                    <button onclick="window.location.href = '/blogs/<%= blog._id %>';">
-                        Read More
-                    </button>
-                </div>
-            <% }); %>
+    <div class="ui main text container">
+        <div class="ui huge header">
+            A blog dedicated to reviewing packaged soup.
+        </div>
+        <div class="ui top attached segment">
+            <div class="ui divided items">
+                <% blogs.forEach(function(blog){ %>
+                    <div class="item">
+                        <div class="image">
+                            <img src="<%= blog.image %>">
+                        </div>
+                        <div class="content">
+                            <a class="header" href="/blogs/<%= blog._id %>"><%= blog.title %></a>
+                            <div class="meta">
+                                <span><%= blog.created.toDateString() %></span>
+                            </div>
+                            <div class="description">
+                                <p><%- blog.body.substring(0, 100) %>...</p>
+                            </div>
+                            <div class="extra">
+                                <button class="ui floated basic purple button" onclick="window.location.href = '/blogs/<%= blog._id %>';">
+                                    Read More
+                                    <i class="right chevron icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
         </div>
     </div>
+<% include partials/footer %>
