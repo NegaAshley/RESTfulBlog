@@ -16,7 +16,8 @@
                     <%- blog.body %>
                 </p>
             </div>
-            <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+            <button class="ui orange basic button" onclick="window.location.href = '/blogs/<%= blog._id %>/edit';">Edit</button>
+            <form id="deleteButton" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
                 <button class="ui red basic button">Delete</button>
             </form>
         </div>

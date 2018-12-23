@@ -5,3 +5,7 @@
 .container.main {
     margin-top: 3.0em;
 }
+
+#deleteButton {
+    display: inline;
+}
