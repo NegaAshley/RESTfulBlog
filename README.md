@@ -45,3 +45,10 @@ Blog
 * Add Show template
 * Add links to show page
 * Style show template
+
+# Edit/Update
+* Add Edit route
+* Add Edit form
+* Add Update route
+* Add Update form
+* Add Method-Override
