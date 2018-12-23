@@ -5,11 +5,11 @@ var express     = require("express"),
     methodOverride = require("method-override"),
     expressSanitizer = require("express-sanitizer");
 
-//Development database
-//mongoose.connect("mongodb://localhost:27017/restful_blog_app", {useNewUrlParser: true });
-
+console.log(process.env.DATABASEURL);
 //Production database
-mongoose.connect("mongodb://NegaAshley:Meepo123@ds243054.mlab.com:43054/whatsoup");
+//mongoose.connect("mongodb://NegaAshley:Meepo123@ds243054.mlab.com:43054/whatsoup");
+
+mongoose.connect(process.env.DATABASEURL);
 
 //App config
 app.set("view engine", "ejs");
