@@ -5,9 +5,8 @@ var express     = require("express"),
     methodOverride = require("method-override"),
     expressSanitizer = require("express-sanitizer");
 
-console.log(process.env.DATABASEURL);
-
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL;
+mongoose.connect(url);
 
 //App config
 app.set("view engine", "ejs");
